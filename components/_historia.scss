@@ -1,0 +1,97 @@
+@media screen and (min-width: 768px){
+
+    .historia{
+    
+        &__title{
+            @include title ($fuente_titulo);
+        }
+    
+        &__title:hover{
+            transform: scale(2);
+        }
+    
+        &__img{
+            @include img ($boxShadow);
+        }
+    } 
+    .organizacion{
+    
+        &__title{
+            @include title ($fuente_titulo);
+        }
+    
+        &__title:hover{
+            transform: scale(2);
+        }
+    
+        &__parrafo{
+           @include parrafo ($fuente_parrafo);
+        }
+    }   
+    .creacion{
+    
+        &__title{
+            @include title ($fuente_titulo);
+        }
+    
+        &__title:hover{
+            transform: scale(2);
+        }
+    
+        &__parrafo{
+            @include parrafo ($fuente_parrafo);
+        }
+    }
+}
+
+@media screen and (max-width: 767px){
+    
+    .historia{
+        margin-top: 50px;
+
+        &__title{
+            font-size: medium;
+            font-family: $fuente_titulo;
+            text-decoration: overline;
+        }
+
+        &__img{
+            margin-top: 30px;
+            border: solid;
+            border-radius: 100%;
+            box-shadow: 0 20px 30px rgba(0, 0, 0, 0.9);
+        }
+    }
+    .organizacion{
+        &__title{
+            text-align: center;
+            font-size: medium;
+            margin: 80px 80px 0px 80px;
+            font-family: $fuente_titulo;
+            text-decoration: overline;
+        }
+
+        &__parrafo{
+            padding: 15px 15px 15px 15px;
+            font-size: small;
+            text-align: justify;
+            font-family: $fuente_parrafo;
+        }
+    }
+    .creacion{
+        &__title{
+            text-align: center;
+            font-size: medium;
+            margin: 10px 80px 0px 80px;
+            font-family: $fuente_titulo;
+            text-decoration: overline;
+        }
+
+        &__parrafo{
+            padding: 15px 15px 15px 15px;
+            text-align: justify;
+            font-size: small;
+            font-family: $fuente_parrafo;
+        }
+    }
+}

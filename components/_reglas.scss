@@ -1,0 +1,257 @@
+@media screen and (min-width: 768px){
+    
+    .reglas{
+        
+        &__title{
+            @include title ($fuente_titulo);
+        }
+    
+        &__title:hover{
+            transform: scale(2);
+        }
+
+        &__img{
+            @include img ($boxShadow);
+        }
+    
+        &__parrafo{
+            @include parrafoReglasCampeonatos ($fuente_parrafo);
+        }
+    }
+    .aspectos{
+        margin: 150px 0px 0px 50px;
+
+        &__title{
+            @include titleReglas ($fuente_titulo);
+        }
+    
+        &__lista{
+            @include lista ($fuente_parrafo);
+        }
+    }
+    .duracion{
+        margin: 150px 0px 0px 50px;
+
+        &__title{
+            @include titleReglas ($fuente_titulo);
+        }
+    
+        &__lista{
+            @include lista ($fuente_parrafo);
+        }
+    }
+    .diferencias{
+        margin: 150px 0px 0px 50px;
+
+        &__title{
+            @include titleReglas ($fuente_titulo);
+        }
+    
+        &__table{
+            @include tabla ($fuente_parrafo);
+        }
+    }
+    .fundamentos{
+        margin: 150px 0px 0px 50px;
+        padding-right: 100px;
+
+        &__title{
+            @include titleReglas ($fuente_titulo);
+        }
+    
+        &__lista{
+            @include lista ($fuente_parrafo);
+        }
+    }
+    .principios{
+        margin: 150px 0px 200px 50px;
+        padding-right: 100px;
+
+        &__title{
+            @include titleReglas ($fuente_titulo);
+        }
+        
+        .defensivos{
+    
+            &__title{
+                margin-top: 50px;
+                text-decoration: overline;
+                font-family: $fuente_titulo
+            }
+    
+            &__lista{
+                @include lista ($fuente_parrafo);
+            }
+        }
+    
+        .ofensivos{
+    
+            &__title{
+                margin-top: 60px;
+                text-decoration: overline;
+                font-family: $fuente_titulo
+            }
+    
+            &__lista{
+                @include lista ($fuente_parrafo);;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 767px){
+   
+    .reglas{
+        margin-top: 50px;
+
+        &__title{
+            margin-bottom: 30px;
+            font-size: medium;
+            font-family: $fuente_titulo;
+            text-decoration: overline;
+        }
+
+        &__img{
+            width: 90%;
+            border: solid;
+            border-radius: 100%;
+            box-shadow: 0 20px 30px rgba(0, 0, 0, 0.9);
+        }
+
+        &__parrafo{
+            margin: 30px 20px 20px 20px;
+            text-align: justify;
+            font-size: medium;
+            font-family: $fuente_parrafo;
+        }
+    }
+    .aspectos{
+        margin-top: 100px;
+
+        &__title{
+            text-align: center;
+            font-size: medium;
+            margin: 0px 30px 0px 30px;
+            font-family: $fuente_titulo;
+            text-decoration: overline;
+        }
+
+        &__lista{
+            margin-top: 30px;
+            padding-right: 30px;
+            text-align: justify;
+            font-size: small;
+            font-family: $fuente_parrafo;
+        }
+    }
+    .duracion{
+        margin-top: 100px;
+
+        &__title{
+            text-align: center;
+            font-size: medium;
+            margin: 0px 50px 0px 50px;
+            font-family: $fuente_titulo;
+            text-decoration: overline;
+        }
+
+        &__lista{
+            margin-top: 30px;
+            padding-right: 30px;
+            text-align: justify;
+            font-size: small;
+            font-family: $fuente_parrafo;
+        }
+    }
+    .diferencias{
+        margin-top: 100px;
+
+        &__title{
+            text-align: center;
+            font-size: medium;
+            margin: 0px 10px 0px 10px;
+            font-family: $fuente_titulo;
+            text-decoration: overline;
+        }
+
+        &__table{
+            width: 90%;
+            margin: 30px 0px 0px 15px;
+            font-size: small;
+            font-family: $fuente_parrafo;
+        }
+    }
+    .fundamentos{
+        margin-top: 100px;
+
+        &__title{
+            text-align: center;
+            font-size: medium;
+            margin: 0px 10px 0px 10px;
+            font-family: $fuente_titulo;
+            text-decoration: overline;
+        }
+
+        &__lista{
+            margin-top: 30px;
+            padding-right: 30px;
+            text-align: justify;
+            font-size: small;
+            font-family: $fuente_parrafo;
+        }
+    }
+    .principios{
+        margin-top: 100px;
+
+        &__title{
+            text-align: center;
+            font-size: medium;
+            margin: 0px 10px 0px 10px;
+            font-family: $fuente_titulo;
+            text-decoration: overline;
+        }
+
+        .defensivos{
+            margin-top: 30px;
+            font-size: small;
+
+            &__title{
+                text-align: center;
+                font-size: small;
+                margin: 30px 50px 0px 50px;
+                font-family: $fuente_titulo;
+                text-decoration: overline;
+            }
+
+            &__lista{
+                margin-top: 30px;
+                padding-right: 30px;
+                text-align: justify;
+                font-size: small;
+                font-family: $fuente_parrafo;
+            }
+        }
+
+        .ofensivos{
+            margin-top: 30px;
+            font-size: small;
+
+            &__title{
+                text-align: center;
+                font-size: small;
+                margin: 70px 50px 0px 50px;
+                font-family: $fuente_titulo;
+                text-decoration: overline;
+            }
+
+            &__lista{
+                margin-top: 30px;
+                padding-right: 30px;
+                text-align: justify;
+                font-size: small; 
+                font-family: $fuente_parrafo;
+            }
+        }
+
+    }
+}

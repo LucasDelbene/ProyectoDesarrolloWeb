@@ -1,0 +1,66 @@
+
+*{  
+  padding:0;
+  margin:0;
+  box-sizing: border-box;
+}
+
+@import 'components/variables';
+@import 'components/global';
+
+@media screen and (min-width: 768px){
+
+    @import './components/_index.scss';
+
+    @import './components/_historia.scss';
+
+    @import './components/_reglas.scss';
+
+    @import './components/_campeonatos.scss';
+
+    @import 'components/contacto.scss';
+
+    @import './components/_footer.scss';
+}
+
+@media screen and (max-width: 767px){
+
+    @import './components/_index.scss';
+
+    @import './components/_historia.scss';
+
+    @import './components/_reglas.scss';
+
+    @import './components/_campeonatos.scss';
+
+    @import './components/_contacto.scss';
+
+    @import './components/_footer.scss';
+}
+
+.body{
+    background-image: url(../imagenes/fondo-body.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.menu{
+    &__nav{
+        background-color: black;
+    }
+
+    &__item{
+        color: white;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,95 @@
+/*MIXIN*/
+@mixin title ($fuente_titulo) {
+    text-align: center;
+    margin-top: 150px;
+    transition: transform 8s;
+    font-family: $fuente_titulo;
+    text-decoration: overline;
+}
+
+@mixin titleCampeonatos ($fuente_titulo) {
+    margin-top: 100px;
+    text-decoration: underline;
+    font-family: $fuente_titulo;
+}
+
+@mixin titleReglas ($fuente_titulo){
+    font-family: $fuente_titulo;
+    text-decoration: overline;
+}
+
+@mixin parrafo ($fuente_parrafo){
+    margin-top: 20px;
+    margin-right: 60px;
+    margin-left: 60px;
+    padding: 20px 20px 20px 20px;
+    font-size: large;
+    text-align: justify;
+    font-family: $fuente_parrafo;
+}
+
+@mixin parrafoReglasCampeonatos ($fuente_parrafo) {
+    text-align: justify;
+    margin: 50px 60px 0px 60px;
+    padding: 20px 20px 20px 20px;
+    font-size: x-large;
+    font-family: $fuente_parrafo;
+}
+
+@mixin img ($boxShadow) {
+    margin-top: 50px;
+    width: 40rem;
+    border: solid;
+    border-radius: 100%;
+    box-shadow: $boxShadow;
+}
+
+@mixin lista ($fuente_parrafo) {
+    margin-top: 30px;
+    text-align: justify;
+    font-family: $fuente_parrafo;
+}
+
+@mixin listaCampeonatos ($fuente_parrafo) {
+    margin-right: 50%;
+    font-family: $fuente_parrafo;
+}
+
+@mixin tabla ($fuente_parrafo){
+    margin-top: 40px;
+    width: 50%;
+    font-family: $fuente_parrafo;
+}
+
+/*MAPS*/
+$redesFooter: (  
+    instagram: #c92d8f,
+    twitter: #55acee,
+    facebook: #007ACC,
+);
+
+@each $name, $color in $redesFooter {
+    
+    .#{$name}{
+        background-color: $color;
+        margin: 0 5px;
+        padding: 10px;
+        color: #fff;
+        border-radius: 20px;
+    }
+
+    instagram{
+        color: map-get($redesFooter, instagram);
+    }
+    
+    twitter{
+        color: map-get($redesFooter, twitter);
+    }
+    
+    facebook{
+        color: map-get($redesFooter, facebook);
+    }
+}
+
+
+

@@ -1,0 +1,68 @@
+@media screen and (min-width: 768px){
+    
+    .section-uno{
+
+        &__title{
+             @include title ($fuente_titulo);
+        }
+    
+        &__title:hover{
+            transform: scale(2); 
+        }
+    
+        &__img{
+          @include img ($boxShadow);
+        }
+    }
+    .section-dos{
+    
+        &__title{
+            @include title ($fuente_titulo);
+        }
+    
+        &__title:hover{
+            transform: scale(2); 
+        }
+    
+        &__parrafo{
+            @include parrafo ($fuente_parrafo);
+        }
+    }
+}
+
+@media screen and (max-width: 767px){
+    
+    .section-uno{
+        &__title{
+            margin-bottom: 20px;
+            text-align: center;
+            font-size: small;
+            padding-top: 30px;
+            font-family: $fuente_titulo;
+            text-decoration: overline;
+        }
+    
+        &__img{
+            width: 90%;
+            margin: 1px 12px 0px 12px;
+            border: solid;
+            border-radius: 100%;
+            box-shadow: 0 20px 30px rgba(0, 0, 0, 0.9);
+        }
+    }
+    .section-dos{
+        &__title{
+            font-size: small;
+            margin-top: 60px;
+            font-family: $fuente_titulo;
+            text-decoration: overline;
+        }
+    
+        &__parrafo{
+            font-size: small;
+            margin: 30px 15px 0px 15px;
+            text-align: justify;
+            font-family: $fuente_parrafo;
+        }
+    }
+}

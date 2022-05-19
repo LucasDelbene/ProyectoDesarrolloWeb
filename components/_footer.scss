@@ -1,0 +1,48 @@
+@media screen and (min-width: 768px){
+   
+    .footer{
+        margin-top: 200px;
+        padding-top: 50px;
+
+        &__lista{
+            margin: 50px 30px 50px 0px;
+        }
+
+        &__link{
+         text-decoration: none;
+         color: white;
+         padding: 10px 10px 10px 10px;
+        }
+
+        &__link:hover{
+            color: white;
+        }
+    }
+}
+
+@media screen and (max-width: 767px){
+   
+    .footer{
+        margin-top: 100px;
+
+        &__parrafo{
+            margin-top: 30px;
+            font-size: small;
+        }
+
+        &__lista{
+           margin: 50px 30px 50px 0px;
+           display: flex;
+           font-size: small;
+        }
+
+        &__link{
+            text-decoration: none;
+            color: white;
+        }
+
+        &__link:hover{
+            color: white;
+        }
+    }
+}

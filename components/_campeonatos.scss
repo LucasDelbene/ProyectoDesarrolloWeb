@@ -1,0 +1,346 @@
+@media screen and (min-width: 768px){
+    
+    .campeonatos{
+    
+        &__title{
+            @include title ($fuente_titulo);
+        }
+        
+        &__title:hover{
+            transform: scale(2);
+        }
+    
+        &__img{
+            @include img ($boxShadow);
+        }
+    
+        &__parrafo{
+            @include parrafoReglasCampeonatos ($fuente_parrafo);
+        }
+    }
+    .masculino{
+    
+        .selecciones{
+            margin: 150px 0px 0px 50px;
+
+            &__title{
+                @include titleReglas ($fuente_titulo);
+            }
+    
+            &__table{
+                @include tabla ($fuente_parrafo);
+            }
+    
+        }
+    
+        .masculino-olimpico{
+            margin: 150px 0px 0px 50px;
+
+            &__title{
+                font-family: $fuente_titulo
+            }
+    
+            &__lista{
+                @include lista ($fuente_parrafo);
+            }
+        }
+    
+        .masculino-clubes{
+            margin: 150px 0px 0px 50px;
+
+            &__title{
+                font-family: $fuente_titulo
+            }
+    
+            &__title{
+                text-align: start;
+            }
+    
+            &__table{
+                @include tabla ($fuente_parrafo);
+            }
+        }
+    }
+    .femenino{
+        margin: 150px 0px 0px 50px;
+
+        &__title{
+            @include titleReglas ($fuente_titulo);
+        }
+    
+        &__table{
+            @include tabla ($fuente_parrafo);
+        }
+    }
+    .juvenil-masculino{
+        margin: 150px 0px 0px 50px;
+
+        &__title{
+            @include titleReglas ($fuente_titulo);
+        }
+    
+        &__table{
+            @include tabla ($fuente_parrafo);
+        }
+    }
+    .juvenil-femenino{
+        margin: 150px 0px 0px 50px;
+
+        &__title{
+            @include titleReglas ($fuente_titulo);
+        }
+    
+        &__table{
+            @include tabla ($fuente_parrafo);
+        }
+    }
+    .nacionales{
+        margin: 150px 0px 0px 50px;
+
+        &__title{
+            @include titleReglas ($fuente_titulo);
+        }
+    
+        .europa{
+            &__title{
+               @include titleCampeonatos ($fuente_titulo); 
+            }
+    
+            &__lista{
+               @include listaCampeonatos ($fuente_parrafo);
+            }
+        }
+    
+        .sudamerica{
+            &__title{
+                @include titleCampeonatos ($fuente_titulo);
+            }
+    
+            &__subtitle{
+                margin-top: 20px;
+                font-size: small;
+            }
+    
+            &__lista{
+                @include listaCampeonatos ($fuente_parrafo);
+            }
+        }
+    
+        .asia{
+           &__title{
+            @include titleCampeonatos ($fuente_titulo);
+           }
+    
+           &__subtitle{
+            margin-top: 20px;
+            font-size: small;
+           }
+    
+           &__lista{
+            @include listaCampeonatos ($fuente_parrafo);
+           }
+        }
+    }
+}
+
+@media screen and (max-width: 767px){
+    
+    .campeonatos{
+        margin-top: 50px;
+
+        &__title{
+            margin-bottom: 30px;
+            font-size: medium;
+            font-family: $fuente_titulo;
+            text-decoration: overline;
+        }
+
+        &__img{
+            width: 90%;
+            box-shadow: 0 20px 30px rgba(0, 0, 0, 0.9);
+        }
+
+        &__parrafo{
+            margin: 30px 20px 20px 20px;
+            text-align: justify;
+            font-family: $fuente_parrafo;
+        }
+    }
+    .masculino{
+
+        .selecciones{
+            &__title{
+                margin: 100px 50px 0px 50px;
+                text-align: center;
+                font-size: medium;
+                font-family: $fuente_titulo;
+                text-decoration: overline;
+            }
+    
+            &__table{
+                width: 90%;
+                margin: 30px 0px 0px 15px;
+                font-size: small;
+                font-family: $fuente_parrafo;
+            }
+        }
+
+        .masculino-olimpico{
+            &__title{
+                text-align: center;
+                font-size: medium;
+                margin: 40px 30px 0px 30px;
+                font-family: $fuente_titulo;
+            }
+
+            &__lista{
+                margin-top: 30px;
+                padding-right: 30px;
+                text-align: justify;
+                font-size: small;
+                font-family: $fuente_parrafo;
+            }
+        }
+
+        .masculino-clubes{
+            &__title{
+                text-align: center;
+                font-size: medium;
+                margin: 40px 30px 0px 30px;
+                font-family: $fuente_titulo;
+            }
+
+            &__table{
+                width: 90%;
+                margin: 30px 0px 0px 15px;
+                font-size: small;
+                font-family: $fuente_parrafo;
+            }
+        }   
+    }
+    .femenino{
+        &__title{
+            margin: 100px 50px 0px 50px;
+            text-align: center;
+            font-size: medium;
+            font-family: $fuente_titulo;
+            text-decoration: overline;
+        }
+
+        &__table{
+            width: 90%;
+            margin: 30px 0px 0px 15px;
+            font-size: small;
+            font-family: $fuente_parrafo;
+        }
+    }
+    .juvenil-masculino{
+        &__title{
+            margin: 100px 10px 0px 10px;
+            text-align: center;
+            font-size: medium;
+            font-family: $fuente_titulo;
+            text-decoration: overline;
+        }
+
+        &__table{
+            width: 90%;
+            margin: 30px 0px 0px 15px;
+            font-size: small;
+            font-family: $fuente_parrafo;
+        }
+    }
+    .juvenil-femenino{
+        &__title{
+            margin: 100px 10px 0px 10px;
+            text-align: center;
+            font-size: medium;
+            font-family: $fuente_titulo;
+            text-decoration: overline;
+        }
+
+        &__table{
+            width: 90%;
+            margin: 30px 0px 0px 15px;
+            font-size: small;
+            font-family: $fuente_parrafo;
+        }
+    } 
+    .nacionales{
+        &__title{
+            margin: 100px 5px 0px 5px;
+            text-align: center;
+            font-size: small;
+
+            font-family: $fuente_titulo;
+            text-decoration: overline;
+        }
+
+        .europa{
+            &__title{
+                text-align: center;
+                font-size: medium;
+                margin: 40px 30px 0px 30px;
+                text-decoration: underline;
+                font-family: $fuente_titulo;
+            }
+
+            &__lista{
+                width: 90%;
+                margin: 30px 0px 0px 15px;
+                font-size: small;
+                font-family: $fuente_parrafo;
+            }
+        }
+
+        .sudamerica{
+            &__title{
+                text-align: center;
+                font-size: medium;
+                margin: 40px 30px 0px 30px;
+                text-decoration: underline;
+                font-family: $fuente_titulo;
+            }
+
+            &__subtitle{
+                text-align: center;
+                margin-top: 15px;
+                font-size: x-small;
+            }
+
+            &__lista{
+                width: 90%;
+                margin: 30px 0px 0px 15px;
+                font-size: small;
+                font-family: $fuente_parrafo;
+            }
+        }
+
+        .asia{
+            &__title{
+                text-align: center;
+                font-size: medium;
+                margin: 40px 30px 0px 30px;
+                text-decoration: underline;
+                font-family: $fuente_titulo;
+            }
+
+            &__subtitle{
+                text-align: center;
+                margin-top: 10px;
+                font-size: x-small;
+            }
+
+            &__lista{
+                width: 90%;
+                margin: 30px 0px 0px 15px;
+                font-size: small;
+                font-family: $fuente_parrafo;
+        }
+
+
+
+
+    }
+    }
+}
