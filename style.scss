@@ -39,10 +39,10 @@
 }
 
 .body{
-    background-image: url(../imagenes/fondo-body.jpg);
+    background-image: url(/imagenes/background.jpg);
+    background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-size: cover;
 }
 .menu{
     &__nav{
